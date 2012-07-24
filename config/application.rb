@@ -62,6 +62,7 @@ module Tygerfaux
       g.template_engine :haml
       g.fixture_replacement :factory_girl, :dir => 'spec/factories'
       g.test_framework  :rspec
+      g.orm :active_record
     end
   end
 end
