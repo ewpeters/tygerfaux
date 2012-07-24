@@ -26,6 +26,7 @@ group :development, :test do
     gem 'rspec-rails'
     gem 'autotest'
     gem 'autotest-standalone'
+    gem 'factory_girl_rails'
 end
 
 gem 'jquery-rails'

@@ -6,6 +6,7 @@
     <th></th>
     <th></th>
     <th></th>
+    <th></th>
   </tr>
 
 <% @facilities.each do |facility| %>
@@ -14,6 +15,7 @@
     <td><%= link_to 'Show', facility %></td>
     <td><%= link_to 'Edit', edit_facility_path(facility) %></td>
     <td><%= link_to 'Destroy', facility, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+    <td><%= link_to 'Residents', facility_residents_path(facility) %></td>
   </tr>
 <% end %>
 </table>

@@ -1,7 +1,9 @@
 Tygerfaux::Application.routes.draw do
   resources :residents
 
-  resources :facilities
+  resources :facilities do
+    resources :residents
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -52,7 +54,7 @@ Tygerfaux::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'facilities#index'
 
   # See how all your routes lay out with "rake routes"
 
