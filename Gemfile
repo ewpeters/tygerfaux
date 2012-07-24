@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
+ruby '1.9.3'
 
 gem 'rails', '3.2.6'
-
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -31,6 +31,7 @@ end
 gem 'jquery-rails'
 gem 'whenever', :require => false
 gem "redis", "~> 3.0.1"
+gem "mongoid", "3.0.1"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
