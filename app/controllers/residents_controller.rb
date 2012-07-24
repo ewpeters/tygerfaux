@@ -2,7 +2,11 @@ class ResidentsController < ApplicationController
   # GET /residents
   # GET /residents.json
   def index
-    @residents = Resident.all
+    if params[:facility_id]
+      @residents = Resident.find_all_by_facility_id(params[:facility_id]) 
+    else
+      @residents = Resident.all
+    end
 
     respond_to do |format|
       format.html # index.html.erb
